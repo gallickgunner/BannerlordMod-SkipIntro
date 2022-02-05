@@ -3,7 +3,7 @@ using System.IO;
 
 namespace SkipIntro
 {
-	internal static class ConfigFileManager
+	static class ConfigFileManager
 	{
 		private static string assemblyDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
 		private static string parentDir = Directory.GetParent(Directory.GetParent(assemblyDir).ToString()).ToString();
